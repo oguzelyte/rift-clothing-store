@@ -1,4 +1,4 @@
-import { ACTION, CartContext } from "../../contexts/cart.context";
+import { CartContext } from "../../contexts/cart.context";
 import { useContext } from "react";
 import {
   CheckoutItemContainer,
@@ -6,6 +6,7 @@ import {
   Quantity,
   RemoveButton,
 } from "./checkout-item.styles";
+import { ACTION } from "../../types/cart";
 
 const CheckoutItem = ({ cartItem }) => {
   const { name, imageUrl, price, quantity } = cartItem;

@@ -1,0 +1,9 @@
+export const ACTION = {
+  add: "ADD",
+  remove: "REMOVE",
+};
+
+export const CART_ACTION_TYPES = {
+  SET_CART_ITEMS: "SET_CART_ITEMS",
+  SET_IS_CART_OPEN: "SET_IS_CART_OPEN",
+};
