@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const Quantity = styled.div`
+  display: flex;
+  .arrow {
+    cursor: pointer;
+  }
+  .value {
+    margin: 0 10px;
+  }
+`;
+
 export const CheckoutItemContainer = styled.div`
   width: 100%;
   display: flex;
@@ -10,8 +20,7 @@ export const CheckoutItemContainer = styled.div`
   align-items: center;
 
   .name,
-  .quantity,
-  .price {
+  ${Quantity}, .price {
     width: 23%;
   }
 `;
@@ -28,14 +37,4 @@ export const ImageContainer = styled.div`
 export const RemoveButton = styled.div`
   padding-left: 12px;
   cursor: pointer;
-`;
-
-export const Quantity = styled.div`
-  display: flex;
-  .arrow {
-    cursor: pointer;
-  }
-  .value {
-    margin: 0 10px;
-  }
 `;
