@@ -5,6 +5,8 @@ import {
   selectCartItems,
   selectCartTotal,
 } from "../../store/cart/cart.selector";
+import { PaymentElement } from "@stripe/react-stripe-js";
+import PaymentForm from "../../components/payment-form/payment-form.component";
 
 const Checkout = () => {
   const cartItems = useSelector(selectCartItems);
@@ -35,6 +37,7 @@ const Checkout = () => {
         ))}
         <span className="total">Total: ${cartTotal}</span>
       </div>
+      <PaymentForm />
     </div>
   );
 };
